@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cámara</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Dividida</title>
+    <style>
+        /* Estilos para los iframes */
+        .main {
+            width: 100%;
+            height: 30vh;
+            border: none;
+        }
+        .side {
+            width: 50%;
+            height: 70vh;
+            border: none;
+            float: left;
+        }
+        
+    </style>
 </head>
 <body>
-  <video src="" id="video" autoplay="true"></video>
-  <button id="toggleCameraButton">Alternar Cámara</button>
-  <script src="main.js"></script>
+    <iframe class="main" src="overlay.html"></iframe>
+    <iframe class="side" src="video.html"></iframe>
+    <iframe class="side" src="camera.html"></iframe>
 </body>
 </html>
